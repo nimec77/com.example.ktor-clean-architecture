@@ -3,6 +3,7 @@ package com.example
 import com.example.config.configureAppConfig
 import com.example.di.appModule
 import com.example.di.configureDI
+import com.example.plugins.configureResources
 import com.example.plugins.configureMonitoring
 import com.example.plugins.configureRouting
 import com.example.plugins.configureSerialization
@@ -17,5 +18,6 @@ fun Application.module(testing: Boolean = false, koinModules: List<Module> = lis
     configureAppConfig()
     configureSerialization()
     configureMonitoring()
+    configureResources()
     configureRouting()
 }
